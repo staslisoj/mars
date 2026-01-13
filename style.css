@@ -1,0 +1,485 @@
+@font-face{
+    font-family: "Gputeks";
+    src: url("font/Gputeks-Regular.woff") format("woff"),
+    url("font/Gputeks-Regular.woff2") format("woff2");
+}
+*{
+    font-family: Gputeks;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 30px;
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 2rem;
+}
+p{
+    font-size: 1rem;
+}
+a{
+    font-size: 1rem;
+}
+.header{
+    height: 100vh;
+    position: relative;
+    background-color: #222735;
+    color: white;
+    
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-link{
+    background: linear-gradient(90deg, #FFB762 0%, #CF54A5 27.6%, #263B6C 73.96%, #FFB762 100%);
+    height: 100px;
+    width: 440px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    line-height: 100px;
+    background-size: 300%;
+    animation: header-link 5s linear infinite;
+}
+.header-rocket{
+    position: absolute;
+    top:25%;
+    left: 50%;
+    animation: header-rocket 10s ease 1;
+}
+.header-planet{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+.about{
+    background: linear-gradient(0deg, #2B344B 0%, #212633 100%);
+    height: 100vh;
+    display: flex;
+}
+.about-left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.about-right{
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-title{
+    margin-bottom: 50px;
+}
+.about-planets{
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.about-alien{
+    width: 155px;
+    height: 197px;
+    background: url("img/section-2-alien.svg") center/cover no-repeat;
+    position: absolute;
+    top: 33%;
+    left: 35%;
+    animation: about-alien 10s linear infinite;
+}
+.about-alien-eye{
+    position:absolute;
+    top: 35%;
+    left: 43%;
+    animation: about-alien-eye 2s linear infinite;
+}
+
+
+
+
+
+
+.people{
+    background: url("img/section-3-bg.svg") bottom/100% no-repeat, 
+    linear-gradient(358.26deg, #242A3A -2.15%, #2A3348 98%);
+    height: 100vh;
+}
+.people-top{
+    display: flex;
+    height: 50%;
+}
+.people-bottom{
+    position: relative;
+    height: 50%;
+    overflow: hidden;
+}
+.people-top-left{
+    width: 50%;
+}
+.people-title{
+    font-size: 60px;
+    text-align: center;
+    margin: 40px 0;
+    color: white;
+}
+.people-top-text{
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    width: 80%;
+    padding-left: 80px;
+}
+.people-top-right{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 100px;
+}
+.people-card p{
+    color: white;
+    font-size: 0.5rem;
+    text-align: center;
+    margin-top:20px;
+}
+.people-alien{
+    position: absolute;
+    height: 80%;
+    bottom: 10%;
+    left: 0;
+    animation: people-alien 10s linear infinite;
+}
+.people-rover{
+    position: absolute;
+    height: 80%;
+    left: 40%;
+    bottom: 10%;
+    animation: people-rover 10s linear infinite;
+}
+
+
+
+
+
+.menu{
+    position: fixed;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    right: -280px;
+    background-color: #3E4761;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    transition: 0.2s;
+}
+.menu-left{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.menu-left p{
+    color: white;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    font-size: 0.5rem;
+    margin: auto;
+}
+.menu-left img{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.menu-right{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.menu-right a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 30px;
+
+}
+.menu:hover{
+    right: 0;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+.satellite{
+    height: 100vh;
+    background-color: #FFB762;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.satellite-circle{
+    position: relative;
+    height: 600px;
+    width: 600px;
+    border-radius:50%;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: satellite-circle 5s linear infinite;
+}
+.satellite-mars {
+
+}
+.first-satellite {
+    position: absolute;
+    bottom: 17%;
+    left: -6%;
+    text-align: center;
+    animation: satellite 5s linear infinite;
+}
+.second-satellite{
+    position: absolute;
+    bottom: -10%;
+    left: 17%;
+    text-align: center;
+    animation: satellite 5s linear infinite;
+}
+
+
+
+
+
+
+
+.second{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #293246;
+    overflow: hidden;
+}
+.second-top{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.second-middle{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.second-middle p{
+    text-align: left;
+    color: white;
+    font-size: 60px;
+    height: 297px;
+    width: 1253px;
+    margin-left: 95px;
+}
+.second-img{
+    position: absolute;
+    top: 70%;
+    right: 23%;
+    z-index: 10;
+    animation: second-img 10s linear infinite;
+}
+.second-bottom{
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-bottom a{
+    position: absolute;
+    color: white;
+    text-align: center;
+    background: linear-gradient(90deg, #FFB762 0%, #CF54A5 27.6%, #263B6C 73.96%, #FFB762 100%);
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 20px;
+    text-decoration: none;
+    background-size: 300%;
+    animation: header-link 5s linear infinite;
+}
+.second-top img{
+    width: 100%;
+}
+.second-bottom img{
+    width: 100%;
+}
+
+
+
+
+
+.footer {
+    height: 40vh;
+    background-color: #FFB876;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer h2{
+    color: #000000;
+}
+@keyframes about-alien{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(160px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes about-alien-eye{
+    0%{
+        transform: translateX(12px);
+    }
+    50%{
+        transform: translateX(-12px);
+    }
+    100%{
+        transform: translateX(12px);
+    }
+}
+@keyframes header-rocket{
+    0%{
+        top: 100%;
+        left: 3%;
+        transform: rotate(90deg);
+    }
+    50%{
+        top: 10%;
+        left: 40%;
+        transform: rotate(45deg);
+    }
+    100%{
+        top: 25%;
+        left: 50%;
+        transform: rotate(0);
+    }
+}
+@keyframes people-rover{
+    0%{
+        left: 40%;
+        transform: rotateY(180deg);
+    }
+    15%{
+        left: 80%;
+        transform: rotateY(0);
+    }
+    30%{
+        left: 15%;
+        transform: rotateY(0);
+    }
+    45%{
+        left: 80%;
+        transform: rotateY(0);
+    }
+    60%{
+        left: 40%;
+        transform: rotateY(180deg);
+    }
+    80%{
+        left: 40%;
+        transform: rotateY(180deg);
+    }
+    100%{
+        left: 130%;
+        transform: rotateY(180deg);
+    }
+}
+@keyframes people-alien{
+    0%{
+        left: -15%
+    }
+    60%{
+        left: 0;
+    }
+    80%{
+        left: 20%;
+    }
+    100%{
+        left: 115%;
+    }
+}
+@keyframes second-img{
+    0%{
+        top: 70%;
+        transform: rotate(0);
+    }
+    35%{
+        transform: rotate(0)
+    }
+    50%{
+        top: 0;
+        transform: rotate(180deg);
+    }
+    85%{
+        transform: rotate(180deg);
+    }
+    100%{
+        top: 70%;
+        transform: rotate(0);
+    }
+}
+@keyframes header-link {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 300%;
+    }
+}
+@keyframes satellite-circle{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes satellite{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
